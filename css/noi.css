@@ -1,0 +1,616 @@
+/* ==========================================================================
+   noi.css — Nòi page styles
+   ========================================================================== */
+
+/* ---------- Page structure ---------- */
+.ai-page-wrapper {
+  overflow: hidden;
+}
+
+/* ---------- Navigation ---------- */
+.ai-navigation {
+  background-color: var(--black);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.ai-nav_content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ai-logo {
+  display: block;
+}
+
+/* ---------- Hero ---------- */
+.ai-section_hero {
+  background-color: var(--black);
+}
+
+.ai-hero_content {
+  grid-row-gap: 1.5rem;
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ai-heading-size-large {
+  font-family: Roboto, sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--white);
+}
+
+.ai-heading-size-large.is-visit {
+  font-size: 78px;
+  line-height: 1.1;
+  color: var(--black);
+}
+
+.ai-text-size-large {
+  font-family: Roboto, sans-serif;
+  color: var(--white);
+  font-size: 20px;
+}
+
+.ai-button {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--white);
+  border-radius: 5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 55px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: filter 0.2s;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ai-button:hover {
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.2);
+}
+
+.ai-button.is-secondary {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.ai-button.is-secondary:hover {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.padding-hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* ---------- Hero Image Section ---------- */
+.ai-section_hero_image {
+  z-index: 1;
+  position: relative;
+  top: -2px;
+}
+
+.ai-hero_triangle {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.ai-hero_triangle.is-right {
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.ai-hero_image_content {
+  z-index: 1;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.ai-hero-image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  padding-left: 2rem;
+}
+
+.is-hero-image {
+  position: relative;
+}
+
+/* ---------- Immersive Features ---------- */
+.ai-section_home_immersive {
+  /* No special background needed */
+}
+
+.ai-home_immersive_content {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.ai-home_immersive_itme {
+  grid-row-gap: 1.5rem;
+  border: 3px solid #06aec5;
+  border-radius: 1rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2.5rem;
+  display: flex;
+}
+
+.ai-icon-small {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
+}
+
+.ai-heading-size-medium {
+  font-size: max(2.5rem, min(4.5vw, 48px));
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.ai-heading-size-medium.text-color-white {
+  color: var(--white);
+}
+
+.ai-heading-size-medium.is-left {
+  text-align: right;
+}
+
+.ai-heading-size-medium.is-right {
+  /* default text-align */
+}
+
+.ai-heading-size-medium.text-size-large-landscape {
+  /* inherits base size */
+}
+
+.ai-text-size-medium {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ai-text-color-gray {
+  color: var(--gray);
+}
+
+/* ---------- Visit / City Section ---------- */
+.ai-section_home_visit {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.ai-home_visit_content {
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.ai-home_visit_image {
+  width: 100%;
+  max-width: 75rem;
+  height: auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-text-color-pink {
+  color: #f226ea;
+}
+
+.ai-cta_content {
+  grid-row-gap: 2.5rem;
+  background-color: var(--black);
+  text-align: center;
+  border-radius: 2rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+  padding: 4rem 6rem;
+  display: flex;
+}
+
+.ai-disable-bottom {
+  padding-bottom: 0;
+}
+
+.text-color-white {
+  color: var(--white);
+}
+
+/* ---------- Marquee ---------- */
+.ai-section_marquee {
+  overflow: hidden;
+}
+
+.ai-marquee_content {
+  padding-top: 4rem;
+}
+
+.ai-marquee_mover {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.ai-marquee_item {
+  width: auto;
+  display: inline-flex;
+}
+
+.ai-marquee_items {
+  grid-column-gap: 2.5rem;
+  width: auto;
+  padding-right: 2.5rem;
+  display: flex;
+}
+
+.ai-marquee_text {
+  color: #06aec5;
+  flex: none;
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Dictionary / Extensive Section ---------- */
+.ai-section_home_extensive {
+  /* No special background */
+}
+
+.ai-home_extendsive_content {
+  grid-column-gap: 58px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ai-home_extendsive_image {
+  object-fit: contain;
+  border-radius: 75px;
+  height: auto;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.38);
+}
+
+.ai-home_extendsive_text {
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 25%;
+  height: 511.736px;
+  display: flex;
+  position: relative;
+}
+
+.ai-home_extendsive_line {
+  background-color: var(--black);
+  width: 150px;
+  height: 3px;
+  margin-top: 3rem;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.ai-home_extendsive_line.ai-is-left {
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.ai-home_extendsive_line.is-right {
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+/* ---------- Join Section ---------- */
+.ai-section_join {
+  background-color: var(--black);
+  position: relative;
+  top: -1px;
+}
+
+.join_content {
+  z-index: 1;
+  grid-column-gap: 80px;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+.ai-join_image {
+  width: 50%;
+  height: auto;
+}
+
+.ai-join_text {
+  grid-row-gap: 1rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.ai-join_triangle {
+  width: 65%;
+  position: absolute;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.ai-join_triangle.ai-is-left {
+  width: 35%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.double-top {
+  padding-top: 10rem;
+}
+
+.disable-double-landscape {
+  /* Only overridden at mobile breakpoint */
+}
+
+/* ---------- Utility: hide classes ---------- */
+.hide {
+  display: none !important;
+}
+
+/* ---------- Responsive: Tablet (max-width: 991px) ---------- */
+@media screen and (max-width: 991px) {
+  .ai-button {
+    width: 100%;
+  }
+
+  .ai-home_visit_content {
+    width: auto;
+  }
+
+  .ai-home_extendsive_content {
+    grid-column-gap: 40px;
+  }
+
+  .ai-home_extendsive_image {
+    width: 40%;
+  }
+
+  .join_content {
+    grid-column-gap: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .ai-join_image {
+    object-fit: contain;
+  }
+
+  .ai-marquee_items {
+    width: auto;
+  }
+
+  .ai-marquee_text {
+    font-size: 100px;
+  }
+
+  .hide-tablet {
+    display: none;
+  }
+}
+
+/* ---------- Responsive: Mobile Landscape (max-width: 767px) ---------- */
+@media screen and (max-width: 767px) {
+  .ai-padding-global.ai-padding-section-medium.double-top.disable-double-landscape {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+
+  .ai-padding-global.padding-hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .ai-text-size-large {
+    text-wrap: pretty;
+    font-size: 18px;
+  }
+
+  .ai-button.is-secondary {
+    font-weight: 700;
+  }
+
+  .ai-hero-image {
+    width: 150%;
+    max-width: none;
+    position: relative;
+    left: -25%;
+  }
+
+  .ai-home_immersive_content {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .ai-home_immersive_itme {
+    padding: 20px;
+  }
+
+  .ai-heading-size-medium {
+    font-size: 26px;
+  }
+
+  .ai-heading-size-medium.text-color-white.text-size-large-landscape {
+    font-size: 48px;
+  }
+
+  .ai-heading-size-medium.is-left {
+    text-align: left;
+    font-size: 48px;
+  }
+
+  .ai-heading-size-medium.is-right {
+    text-align: right;
+    font-size: 48px;
+  }
+
+  .ai-heading-size-large {
+    text-wrap: pretty;
+    font-size: 32px;
+  }
+
+  .ai-heading-size-large.is-visit {
+    font-size: 2rem;
+  }
+
+  .ai-section_home_visit {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .ai-cta_content {
+    grid-row-gap: 1.5rem;
+    border-radius: 1rem;
+    padding: 2.5rem 1rem;
+  }
+
+  .ai-home_extendsive_content {
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .ai-home_extendsive_text {
+    text-align: left;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    padding-bottom: 56px;
+  }
+
+  .ai-home_extendsive_line.ai-is-left {
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
+  }
+
+  .ai-home_extendsive_line.is-right {
+    top: auto;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+  }
+
+  .join_content {
+    grid-row-gap: 64px;
+    flex-flow: column;
+  }
+
+  .ai-join_image {
+    width: 100%;
+  }
+
+  .ai-marquee_text {
+    font-size: 50px;
+  }
+
+  .hide-mobile-landscape {
+    display: none !important;
+  }
+}
+
+/* ---------- Responsive: Mobile Portrait (max-width: 479px) ---------- */
+@media screen and (max-width: 479px) {
+  .ai-button,
+  .ai-button.is-secondary {
+    line-height: 1.1;
+  }
+
+  .ai-text-size-medium.ai-text-color-gray {
+    text-wrap: pretty;
+  }
+
+  .ai-navigation {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .ai-logo {
+    width: 67px;
+  }
+
+  .ai-hero_content {
+    grid-row-gap: 1.5rem;
+  }
+
+  .ai-hero-image {
+    width: 206%;
+    left: -52%;
+  }
+
+  .ai-heading-size-medium.is-left {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .ai-heading-size-medium.is-right {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .ai-home_extendsive_image {
+    width: 100%;
+  }
+
+  .hide-mobile-portrait {
+    display: none !important;
+  }
+}
