@@ -1,0 +1,141 @@
+/* ==========================================================================
+   common.css — Shared foundation for all pages
+   ========================================================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@600&family=Roboto:wght@300;400;700;900&display=swap');
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- CSS Custom Properties ---------- */
+:root {
+  --white: white;
+  --black: black;
+  --brand-blue: #1bb7fa;
+  --gray: #494949;
+  --base-color-brand--blue: #2d62ff;
+  --base-color-brand--pink: #dd23bb;
+}
+
+/* ---------- Focus state for keyboard navigation ---------- */
+*[tabindex]:focus-visible,
+input[type="file"]:focus-visible {
+  outline: 0.125rem solid #4d65ff;
+  outline-offset: 0.125rem;
+}
+
+/* ---------- Shared layout utilities ---------- */
+.ai-padding-global {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.ai-container-small {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-padding-section-medium {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.ai-padding-bottom {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ai-padding-small {
+  padding-bottom: 1rem;
+}
+
+/* ---------- Responsive: Tablet ---------- */
+@media screen and (max-width: 991px) {
+  .ai-padding-section-medium {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .ai-padding-bottom {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ---------- Responsive: Mobile Landscape ---------- */
+@media screen and (max-width: 767px) {
+  .ai-padding-global {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .ai-padding-section-medium {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .ai-padding-bottom {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ---------- Responsive: Mobile Portrait ---------- */
+@media screen and (max-width: 479px) {
+  .ai-padding-bottom {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
