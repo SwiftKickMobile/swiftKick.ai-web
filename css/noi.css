@@ -207,6 +207,7 @@
   justify-content: flex-start;
   align-items: center;
   display: flex;
+  box-sizing: border-box;
 }
 
 .ai-home_visit_content {
@@ -237,8 +238,9 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   max-width: 80rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 4rem 6rem;
   display: flex;
 }
@@ -282,7 +284,7 @@
   flex: none;
   font-size: 120px;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.15;
 }
 
 @keyframes marquee {
@@ -308,9 +310,7 @@
 
 .ai-home_extendsive_image {
   object-fit: contain;
-  border-radius: 75px;
   height: auto;
-  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.38);
 }
 
 .ai-home_extendsive_text {
@@ -329,24 +329,17 @@
   height: 3px;
   margin-top: 3rem;
   position: absolute;
-  top: auto;
-  bottom: 0%;
-  left: 0%;
-  right: auto;
+  bottom: 0;
 }
 
 .ai-home_extendsive_line.ai-is-left {
-  top: auto;
-  bottom: 0%;
+  right: 0;
   left: auto;
-  right: 0%;
 }
 
 .ai-home_extendsive_line.is-right {
-  top: auto;
-  bottom: 0%;
-  left: auto;
-  right: 0%;
+  left: 0;
+  right: auto;
 }
 
 /* ---------- Join Section ---------- */
@@ -378,7 +371,7 @@
 }
 
 .ai-join_triangle {
-  width: 65%;
+  width: calc(65% + 1px);
   position: absolute;
   bottom: auto;
   left: 0%;
@@ -386,7 +379,7 @@
 }
 
 .ai-join_triangle.ai-is-left {
-  width: 35%;
+  width: calc(35% + 1px);
   bottom: auto;
   left: auto;
   right: 0%;
@@ -518,6 +511,9 @@
   .ai-cta_content {
     grid-row-gap: 1.5rem;
     border-radius: 1rem;
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 2.5rem 1rem;
   }
 
@@ -542,10 +538,8 @@
   }
 
   .ai-home_extendsive_line.is-right {
-    top: auto;
-    bottom: 0%;
+    right: 0;
     left: auto;
-    right: 0%;
   }
 
   .join_content {
