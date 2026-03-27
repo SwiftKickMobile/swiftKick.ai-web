@@ -298,7 +298,7 @@
 
 /* ---------- Dictionary / Extensive Section ---------- */
 .ai-section_home_extensive {
-  /* No special background */
+  overflow: hidden;
 }
 
 .ai-home_extendsive_content {
@@ -346,7 +346,18 @@
 .ai-section_join {
   background-color: var(--black);
   position: relative;
-  top: -1px;
+}
+
+.ai-section_join::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  right: -1px;
+  height: calc(16vw + 4px);
+  background: var(--white);
+  clip-path: polygon(0 0, 0 100%, 65% 0, 100% 53%, 100% 0);
+  z-index: 1;
 }
 
 .join_content {
@@ -370,23 +381,8 @@
   display: flex;
 }
 
-.ai-join_triangle {
-  width: calc(65% + 1px);
-  position: absolute;
-  bottom: auto;
-  left: 0%;
-  right: auto;
-}
-
-.ai-join_triangle.ai-is-left {
-  width: calc(35% + 1px);
-  bottom: auto;
-  left: auto;
-  right: 0%;
-}
-
 .double-top {
-  padding-top: 10rem;
+  padding-top: calc(15vw + 2rem);
 }
 
 .disable-double-landscape {
@@ -522,6 +518,10 @@
     flex-flow: column;
   }
 
+  .ai-home_extendsive_image {
+    width: 50%;
+  }
+
   .ai-home_extendsive_text {
     text-align: left;
     width: auto;
@@ -598,10 +598,6 @@
     font-size: 48px;
     font-weight: 900;
     line-height: 1.1;
-  }
-
-  .ai-home_extendsive_image {
-    width: 100%;
   }
 
   .hide-mobile-portrait {
