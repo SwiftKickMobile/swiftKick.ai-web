@@ -59,16 +59,16 @@
 }
 
 .ai-button {
-  background-color: var(--white);
-  color: var(--black);
-  border: 2px solid var(--white);
-  border-radius: 5rem;
+  background-color: #1bb7fa;
+  color: var(--white);
+  border: 1px solid #1bb7fa;
+  border-radius: 16px;
   justify-content: center;
   align-items: center;
-  padding: 20px 55px;
-  font-family: Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  padding: 17.6px 24px;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
   transition: filter 0.2s;
   display: flex;
   cursor: pointer;
@@ -82,7 +82,7 @@
 .ai-button.is-secondary {
   background-color: transparent;
   color: var(--white);
-  border-color: var(--white);
+  border: 2px solid #1bb7fa;
 }
 
 .ai-button.is-secondary:hover {
@@ -348,20 +348,23 @@
   position: relative;
 }
 
+/* Single combined SVG for the angled roof shape — no seam at the peak */
 .ai-section_join::before {
   content: '';
   position: absolute;
-  top: -2px;
+  top: -1px;
   left: -1px;
   right: -1px;
-  height: calc(16vw + 4px);
-  background: var(--white);
-  clip-path: polygon(0 0, 0 100%, 65% 0, 100% 53%, 100% 0);
+  height: 0;
+  padding-bottom: 16.1%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -10 1440 242' preserveAspectRatio='none'%3E%3Cpath d='M0 232L974 0L1440 109V-10H0Z' fill='white'/%3E%3C/svg%3E") no-repeat;
+  background-size: 100% 100%;
   z-index: 1;
+  pointer-events: none;
 }
 
 .join_content {
-  z-index: 1;
+  z-index: 2;
   grid-column-gap: 80px;
   justify-content: space-between;
   display: flex;
@@ -382,7 +385,7 @@
 }
 
 .double-top {
-  padding-top: calc(15vw + 2rem);
+  padding-top: 8vw;
 }
 
 .disable-double-landscape {
